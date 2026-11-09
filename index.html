@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ליטל חי · מדיה קיט</title>
+<meta name="description" content="מדיה קיט של ליטל חי (@leetalchai) - יוצרת תוכן על AI לנשים עסוקות ואמהות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="kit.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+
+<div id="site">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main"><span class="ltr">@leetalchai</span> <small>· מדיה קיט</small></a>
+    <nav class="nav" aria-label="ניווט בקיט">
+      <a href="#reels">תוכן</a><a href="#audience">קהל</a><a href="#ugc" data-ugc-link>עבודות</a><a href="#how">איך עובדים</a>
+    </nav>
+    <a class="pill pill-red" href="#contact">לשיתוף פעולה</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 1. פתיחה -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="card hero-card">
+        <div class="checks" aria-hidden="true"></div>
+        <div class="hero-in">
+          <span class="label">נתוני <span data-k="source"></span> · <span data-k="windowDays"></span> יום</span>
+          <p class="big" id="hero-title"><span class="ltr" data-k="hero"></span></p>
+          <div class="hero-text">
+            <p>מהצפיות שלי מגיעות ממי שעוד לא עוקבת אחריי. התוכן שלי נדחף לקהל <span class="hand">חדש.</span></p>
+            <p>יוצרת תוכן על AI לנשים עסוקות ואמהות. 12 שנים בצד של המותג.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. שורת נתונים -->
+  <section class="stats-sec" aria-label="נתונים">
+    <div class="wrap">
+      <div class="stats" data-stats></div>
+      <p class="updated">מעודכן ל-<span class="ltr" data-k="updated"></span> · <span data-k="windowDays"></span> הימים האחרונים · מתוך <span data-k="source"></span></p>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <ul><li>ביוטי וטיפוח</li><li>בית ואווירה</li><li>משפחה ומתנות</li><li>AI לנשים עסוקות</li></ul>
+  </div>
+
+  <!-- 3. עליי -->
+  <section class="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <figure class="photo"><img src="assets/leetal.jpg" alt="ליטל חי, יוצרת תוכן" width="480" height="600"></figure>
+      <div class="about-text">
+        <h2 class="lead" id="about-title">הייתי <span class="hand">בצד שלך.</span></h2>
+        <p>12 שנים הייתי מנהלת שיווק בחברת ביוטי בינלאומית. אני יודעת מה זה בריף, יעד קמפיין ומדד הצלחה - ומה צריך להגיש למנהל בסוף.</p>
+        <p>היום אני אמא לשניים שמראה לנשים עסוקות איך AI עובד בשבילן. בלי הייפ, מהחיים.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. התוכן שהכי עבד -->
+  <section class="reels" id="reels" aria-labelledby="reels-title">
+    <div class="wrap">
+      <h2 class="h2" id="reels-title">לא מזל - <span class="hand">דפוס.</span></h2>
+      <p class="sub">הרילסים שהכי עבדו ב-<span data-k="windowDays"></span> הימים האחרונים. לחיצה פותחת באינסטגרם.</p>
+      <div class="rail" data-reels></div>
+      <p class="note" data-k="reelsNote"></p>
+    </div>
+  </section>
+
+  <!-- 5. הקהל -->
+  <section class="aud-sec" id="audience" aria-labelledby="aud-title">
+    <div class="wrap">
+      <h2 class="h2" id="aud-title">הקהל <span class="hand">שלי.</span></h2>
+      <p class="sub">מתוך <span data-k="audience.followers"></span> העוקבים · נתוני <span data-k="source"></span></p>
+      <div class="aud">
+        <div class="card blk gender" data-gender></div>
+        <div class="card blk">
+          <h3>גיל · <span data-k="audience.ageSummary"></span></h3>
+          <ul class="age" data-ages></ul>
+        </div>
+        <div class="card blk cities">
+          <h3>מיקום</h3>
+          <b data-k="audience.region"></b>
+          <p data-cities></p>
+        </div>
+      </div>
+      <p class="fit" data-k="audience.fit"></p>
+    </div>
+  </section>
+
+  <!-- 6. UGC -->
+  <section class="ugc" id="ugc" aria-labelledby="ugc-title" data-ugc-sec>
+    <div class="wrap">
+      <h2 class="h2" id="ugc-title">סרטונים שיצרתי <span class="hand">למותגים.</span></h2>
+      <p class="sub">המותגים מפרסמים אותם אצלם. לחיצה מנגנת עם סאונד.</p>
+      <div class="rail" data-ugc></div>
+    </div>
+  </section>
+
+  <!-- 7. מה אפשר להזמין -->
+  <section class="order" aria-labelledby="order-title">
+    <div class="wrap">
+      <h2 class="h2" id="order-title">מה אפשר <span class="hand">להזמין.</span></h2>
+      <p class="sub">מחירון מותאם נשלח לפי בריף.</p>
+      <div class="order-grid">
+        <div class="card order-list">
+          <p class="kicker">בערוץ שלי</p>
+          <ul>
+            <li><b>ריל</b><span>סרטון אצלי באינסטגרם, בסגנון שהקהל שלי כבר מכיר.</span></li>
+            <li><b>סטוריז</b><span>רצף קצר מהיום-יום, עם קישור אליכם.</span></li>
+            <li><b>קרוסלה</b><span>פוסט של כמה שקופיות - טוב להסבר ולשמירה.</span></li>
+          </ul>
+        </div>
+        <div class="card order-ugc">
+          <p class="kicker">בערוץ שלכם</p>
+          <b>UGC</b>
+          <p>סרטון שאני יוצרת ואתם מפרסמים אצלכם - באתר, ברשתות או במודעות.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. איך עובדים איתי -->
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 class="h2" id="how-title">איך עובדים <span class="hand">איתי.</span></h2>
+      <p class="sub">כמו שהייתי רוצה שיעבדו איתי, כשהייתי בצד שלכם.</p>
+      <div class="how-grid">
+        <div class="tabcard"><span class="tab" aria-hidden="true">01</span><div class="card"><h3>אתם שולחים בריף - אני יוצרת הכל בעצמי</h3><p>רעיון, צילום ועריכה.</p></div></div>
+        <div class="tabcard"><span class="tab" aria-hidden="true">02</span><div class="card"><h3>מתאימה כל מסר לקהל שלי</h3><p>המסר שלכם, בשפה שהעוקבות שלי סומכות עליה.</p></div></div>
+        <div class="tabcard wide"><span class="tab" aria-hidden="true">03</span><div class="card"><h3>דוח תוצאות בסוף כל קמפיין</h3><p>הייתי בצד שלכם - אני יודעת מה צריך להגיש למנהל.</p></div></div>
+        <div class="tabcard"><span class="tab" aria-hidden="true">04</span><div class="card"><h3>זכויות שימוש ובלעדיות</h3><p>בתוספת, ומוסכם מראש.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. צור קשר -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-in">
+      <h2 class="h2" id="contact-title">ספרו לי על <span class="hand">המותג שלכם.</span></h2>
+      <p>מה אתם רוצים להשיג, ולמי אתם רוצים להגיע. אחזור אליכם עם רעיון.</p>
+      <div class="actions">
+        <a class="pill pill-mail" data-mail-link href="#contact">שלחו לי מייל</a>
+        <a class="wa" data-wa target="_blank" rel="noopener">או בוואטסאפ: <span class="ltr" data-k="contact.whatsappDisplay"></span></a>
+      </div>
+      <div class="mailrow"><span class="ltr" data-mail-text></span><button class="copy" type="button" data-copy>העתקה</button><span class="sr-only" role="status" data-copy-status></span></div>
+      <noscript><p>מייל: leetalcha [at] gmail.com</p></noscript>
+      <p class="small"><strong>מחירון מותאם נשלח לפי בריף.</strong> · <a href="leetal-chai-media-kit.pdf" download>להורדת הקיט כ-PDF</a></p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>ליטל חי · <a href="https://www.instagram.com/leetalchai/" target="_blank" rel="noopener" class="ltr">@leetalchai</a></span><small>מעודכן ל-<span class="ltr" data-k="updated"></span></small></div></footer>
+</div>
+
+<!-- גרסת ה-PDF: עמוד A4 אחד, מאותם נתונים. מוצגת רק בהדפסה. -->
+<div id="print" aria-hidden="true">
+  <div class="p-top"><span><b class="ltr">@leetalchai</b> · מדיה קיט</span><span>מעודכן ל-<span class="ltr" data-k="updated"></span> · <span data-k="windowDays"></span> הימים האחרונים · מתוך <span data-k="source"></span></span></div>
+  <div class="p-hero">
+    <p class="big"><span class="ltr" data-k="hero"></span></p>
+    <div>
+      <p>מהצפיות שלי מגיעות ממי שעוד לא עוקבת אחריי. התוכן שלי נדחף לקהל <span class="hand">חדש.</span></p>
+      <p>יוצרת תוכן על AI לנשים עסוקות ואמהות. 12 שנים בצד של המותג.</p>
+    </div>
+  </div>
+  <div class="p-stats" data-pstats></div>
+  <div class="p-two">
+    <div class="p-about">
+      <img src="assets/leetal.jpg" alt="">
+      <div>
+        <h2>הייתי <span class="hand">בצד שלך.</span></h2>
+        <p>12 שנים מנהלת שיווק בחברת ביוטי בינלאומית. יודעת מה זה בריף, יעד ומדד הצלחה - ומה צריך להגיש למנהל בסוף. היום אמא לשניים שמראה לנשים עסוקות איך AI עובד בשבילן.</p>
+      </div>
+    </div>
+    <div class="p-aud">
+      <h2>הקהל שלי <span style="font-weight:500;font-size:8pt">· מתוך <span data-k="audience.followers"></span> העוקבים</span></h2>
+      <ul data-paud></ul>
+      <p class="fit" data-k="audience.fit"></p>
+    </div>
+  </div>
+  <div class="p-media">
+    <div>
+      <p class="p-sec">לא מזל - דפוס.</p>
+      <div class="p-row" data-preels></div>
+      <p class="p-ugc-note" data-k="reelsNote"></p>
+    </div>
+    <div data-pugc-wrap>
+      <p class="p-sec">סרטונים שיצרתי למותגים</p>
+      <div class="p-row" data-pugc></div>
+      <p class="p-ugc-note">המותגים מפרסמים אותם אצלם. <span data-pkit></span></p>
+    </div>
+  </div>
+  <div class="p-lists">
+    <div>
+      <p class="p-sec">מה אפשר להזמין</p>
+      <ul>
+        <li><b>ריל · סטוריז · קרוסלה</b> - בערוץ שלי</li>
+        <li><b>UGC</b> - סרטון שאתם מפרסמים אצלכם</li>
+        <li>מחירון מותאם נשלח לפי בריף</li>
+      </ul>
+    </div>
+    <div>
+      <p class="p-sec">איך עובדים איתי</p>
+      <ul>
+        <li><b>01</b> אתם שולחים בריף - אני יוצרת הכל בעצמי</li>
+        <li><b>02</b> מתאימה כל מסר לקהל שלי</li>
+        <li><b>03</b> דוח תוצאות בסוף כל קמפיין</li>
+        <li><b>04</b> זכויות שימוש ובלעדיות - בתוספת</li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-contact">
+    <h2>ספרו לי על <span class="hand">המותג שלכם.</span></h2>
+    <p><a data-mail-link data-mail-text></a><br><a data-wa>וואטסאפ <span class="ltr" data-k="contact.whatsappDisplay"></span></a><br><strong>מחירון מותאם לפי בריף</strong></p>
+  </div>
+</div>
+</body>
+</html>
